@@ -145,7 +145,7 @@ public class LandingPage extends Activity {
                                          		"DOB : " + dob;
                                          		
                                          		 
-                                         Log.d("user_info", "asshole");   
+                                         Log.d("user_info", "very nice");   
                                          Log.d("DEBUG", "First Name " + first_name + last_name + " "+ 
                                                     username + location +" "+locale+" "+gender+" "+dob);
                                          
@@ -154,6 +154,7 @@ public class LandingPage extends Activity {
                                  
                          }
                      });
+                     
                      new Request(
                      	    session,
                      	    "/me/likes",

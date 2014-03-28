@@ -242,17 +242,17 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f040020;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f04001e;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f04001f;
-        public static final int details=0x7f040008;
-        public static final int interests=0x7f040007;
+        public static final int details=0x7f040007;
+        public static final int interests=0x7f04000b;
         public static final int large=0x7f040002;
-        public static final int likes=0x7f040006;
+        public static final int likes=0x7f040009;
         public static final int loading=0x7f040004;
         public static final int loading_error=0x7f040005;
         public static final int normal=0x7f040001;
         public static final int picker_subtitle=0x7f04001b;
         public static final int small=0x7f040000;
-        public static final int textView1=0x7f040009;
-        public static final int textView2=0x7f04000b;
+        public static final int textView1=0x7f040006;
+        public static final int textView2=0x7f040008;
         public static final int textView3=0x7f04000a;
         public static final int update=0x7f040021;
     }

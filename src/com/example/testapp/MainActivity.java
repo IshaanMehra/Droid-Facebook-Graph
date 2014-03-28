@@ -67,7 +67,6 @@ public class MainActivity extends Activity {
             if (session != null && session.isOpened()) {
                     Log.d("DEBUG", "facebook session is open ");
                     
-                    
                     /* Making the login Button Invisible */
                     LoginButton button = (LoginButton) findViewById(R.id.authButton);
                     button.setVisibility(View.GONE);
@@ -94,16 +93,13 @@ public class MainActivity extends Activity {
                                 Log.d("DEBUG", "First Name " + first_name + last_name + " "+ 
                                            username + location +" "+locale+" "+gender+" "+dob);
                                 
-                                //new AddInDatabase().execute();
+                                new AddInDatabase().execute();
                                
-                                //Start a new Activity 
+                                /* Start a new Activity 
                                 Intent intent = new Intent(getApplicationContext(), LandingPage.class);
-                                MainActivity.this.finish();
-                                startActivity(intent);
-                                Log.d("check", "activity diverted");
+                                FacebookLogin.this.finish();
+                                startActivity(intent);  */
                         }
-                        else
-                        	Log.d("Debug", "some error here");
                 }
             });
             }
@@ -187,7 +183,11 @@ public class MainActivity extends Activity {
     		 * After completing background task Dismiss the progress dialog
     		 * **/
     		protected void onPostExecute(String file_url) {
-    			
+    			 /* Start a new Activity */
+                Intent intent = new Intent(getApplicationContext(), LandingPage.class);
+                intent.putExtra("email_id", email_id);
+                MainActivity.this.finish();
+                startActivity(intent);
     		}
         	
         }
